@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image } from '@chakra-ui/react';
+import { Grid, Image } from '@chakra-ui/react';
 import logo from '../assets/logoLight.png';
 import NavbarMenu from './NavbarMenu';
 const Navbar = () => {
