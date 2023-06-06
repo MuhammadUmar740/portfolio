@@ -1,4 +1,5 @@
 import { Box, Grid } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
@@ -11,8 +12,8 @@ const App = () => {
       minHeight="100vh"
     >
       {/* Navigation */}
-      <Box gridArea="nav" p={4} bg="gray.200">
-        Navbar
+      <Box gridArea="nav">
+        <Navbar/>
       </Box>
 
       {/* Main Section */}
