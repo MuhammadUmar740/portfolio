@@ -1,6 +1,7 @@
 import { Box, Grid } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
+import AboutMe from "./components/AboutMe";
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
       {/* Main Section */}
       <Box gridArea="main" py={{base:10,md:20}}>
         <Intro/>
+        <Box mt={{base:10,md:20,lg:40}}>
+          <AboutMe/>
+        </Box>
       </Box>
 
       {/* Footer */}
