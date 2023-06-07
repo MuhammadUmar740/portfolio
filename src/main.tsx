@@ -4,6 +4,8 @@ import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import App from "./App";
 import "./index.css";
 import theme from "./theme";
+import '@fontsource/fira-code';
+import '@fontsource/heebo';
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>

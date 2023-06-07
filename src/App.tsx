@@ -1,5 +1,6 @@
 import { Box, Grid } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
 
       {/* Main Section */}
       <Box gridArea="main" p={4}>
-        Main Section
+        <Intro/>
       </Box>
 
       {/* Footer */}
