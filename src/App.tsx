@@ -18,7 +18,7 @@ const App = () => {
       </Box>
 
       {/* Main Section */}
-      <Box gridArea="main" p={4}>
+      <Box gridArea="main" py={{base:10,md:20}}>
         <Intro/>
       </Box>
 
