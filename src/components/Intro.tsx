@@ -1,4 +1,4 @@
-import { Box, Button, Container, Text } from "@chakra-ui/react";
+import { Box, Button, Container, Link, Text } from "@chakra-ui/react";
 import H1, { Paragraph } from "./Typography";
 
 const Intro = () => {
@@ -9,21 +9,34 @@ const Intro = () => {
 
   return (
     <Container maxW="1000px">
-      <Text color="teal" mb={5}>Hi, my name is</Text>
-      <H1 textShadow="2px -3px 10px black">
-        Muhammad Umer Riaz.
-      </H1>
-      <H1 color="#8892b0">
-        I build things for the web.
-      </H1>
+      <Text color="teal" mb={5}>
+        Hi, my name is
+      </Text>
+      <H1 textShadow="2px -3px 10px black">Muhammad Umer Riaz.</H1>
+      <H1 color="#8892b0">I build things for the web.</H1>
       <Box maxW="650px" mb={5}>
         <Paragraph>
-          I’m a software engineer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at <Button as='button' variant='link' color='teal'>Upstatement</Button>.
+          I have expertise as a software engineer, dedicated to developing
+          outstanding digital experiences. Alongside my software engineering
+          skills, I also have a knack for design. My current focus revolves
+          around creating accessible and user-friendly React applications{" "}
+          <Link
+            href="https://www.solutionsurface.com"
+            color="teal"
+            target="_blank"
+          >
+            Solution Surface
+          </Link>
         </Paragraph>
       </Box>
-      <Button variant='outline' colorScheme="teal" size='md' fontWeight='light'>Check out my CV</Button>
+      <Button variant="outline" colorScheme="teal" size="md" fontWeight="light">
+        <a
+          href="https://drive.google.com/file/d/1q5fX21cJCQ-ni3jTGYPtmXpra9q2toLA/view"
+          target="_blank"
+        >
+          Check out my CV
+        </a>
+      </Button>
     </Container>
   );
 };
