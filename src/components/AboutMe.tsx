@@ -8,6 +8,7 @@ import {
   ListIcon,
   ListItem,
   SimpleGrid,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import profile from "../assets/profile_picture.jpg";
 import { H3, Paragraph } from "./Typography";
@@ -24,7 +25,7 @@ const AboutMe = () => {
     "java",
     "python",
   ];
-
+  const color = useColorModeValue(undefined,'#8892b0')
   return (
     <Container maxW="1160px">
       <Box mb={5}>
@@ -100,8 +101,8 @@ const AboutMe = () => {
               {skills.map(
                 (skill, i) =>
                   i < Math.floor(skills.length / 2) && (
-                    <ListItem key={i} fontSize='xs'>
-                      <ListIcon as={BsPlayFill} color="green.500" />
+                    <ListItem key={i} fontSize='xs' color={color}>
+                      <ListIcon as={BsPlayFill} color="teal" />
                       {skill}
                     </ListItem>
                   )
@@ -111,8 +112,8 @@ const AboutMe = () => {
               {skills.map(
                 (skill, i) =>
                   i >= Math.floor(skills.length / 2) && (
-                    <ListItem key={i} fontSize='xs'>
-                      <ListIcon as={BsPlayFill} color="green.500" />
+                    <ListItem key={i} fontSize='xs' color={color}>
+                      <ListIcon as={BsPlayFill} color="teal" />
                       {skill}
                     </ListItem>
                   )
