@@ -34,7 +34,7 @@ const H3 = ({ children, color = "#ccd6f6" }: Props) => {
 };
 
 const Paragraph = ({ children, color = "#8892b0" }: Props) => {
-  return <Text color={color}>{children}</Text>;
+  return <Text color={color} mb={3} fontSize={{base:'sm',md:'md'}}>{children}</Text>;
 };
 export default H1;
 export { Paragraph, H3 };
