@@ -12,7 +12,7 @@ const Intro = () => {
       <Text color="teal" mb={5}>
         Hi, my name is
       </Text>
-      <H1 textShadow="2px -3px 10px black">Muhammad Umer Riaz.</H1>
+      <H1>Muhammad Umer Riaz.</H1>
       <H1 color="#8892b0">I build things for the web.</H1>
       <Box maxW="650px" mb={5}>
         <Paragraph>
