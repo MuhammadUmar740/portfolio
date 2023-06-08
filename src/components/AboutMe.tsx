@@ -27,7 +27,7 @@ const AboutMe = () => {
   ];
   const color = useColorModeValue(undefined,'#8892b0')
   return (
-    <Container maxW="1160px">
+    <>
       <Box mb={5}>
         <H3>About Me</H3>
       </Box>
@@ -122,7 +122,7 @@ const AboutMe = () => {
           </SimpleGrid>
         </Box>
       </Grid>
-    </Container>
+    </>
   );
 };
 

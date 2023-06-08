@@ -8,7 +8,7 @@ const Intro = () => {
   };
 
   return (
-    <Container maxW="1000px">
+    <>
       <Text color="teal" mb={5}>
         Hi, my name is
       </Text>
@@ -37,7 +37,7 @@ const Intro = () => {
           Check out my CV
         </a>
       </Button>
-    </Container>
+    </>
   );
 };
 
